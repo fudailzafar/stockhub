@@ -1,14 +1,26 @@
 import React from "react";
-import Logo from "../assets/favicon.ico";
 
 const Header = () => {
   return (
     <div className="mx-8 sm:mx-16 xl:mx-24 relative">
       <div className="text-center mt-20 mb-8">
-        <div className="inline-flex items-center justify-center gap-4 px-6 py-1.5 mb-4 border border-primary/40 bg-primary/10 rounded-full text-sm text-primary">
-          <p>New: AI feature integrated</p>
-          <img src={Logo} alt="star icon" className="w-2.5" />
+        <div className="inline-flex items-center justify-center mb-4">
+          <div className="mb-1.5 w-fit rounded-full bg-zinc-600">
+            <a
+              href="#"
+              rel="nofollow"
+              className="flex origin-top-left items-center rounded-full border border-zinc-900 bg-white p-0.5 text-sm transition-transform hover:-rotate-2"
+            >
+              <span className="rounded-full bg-[#FF6154] px-2 py-0.5 font-medium text-white">
+                NEW:
+              </span>
+              <span className="ml-1.5 mr-1 inline-block">
+                AI feature integrated! ✨
+              </span>
+            </a>
+          </div>
         </div>
+
         <h1 className="text-3xl sm:text-6xl font-semibold sm:leading-16 text-gray-700">
           Your only <span className="text-primary">finance</span> <br />{" "}
           platform.
@@ -20,10 +32,7 @@ const Header = () => {
           Every dream has a price!
         </p>
 
-        <form
-          action=""
-          className="flex justify-between max-w-lg max-sm:scale-75 mx-auto border border-gray-300 bg-white rounded overflow-hidden"
-        >
+        <form className="flex justify-between max-w-lg max-sm:scale-75 mx-auto border border-gray-300 bg-white rounded overflow-hidden">
           <input
             type="text"
             placeholder="Search for blogs"
@@ -38,11 +47,11 @@ const Header = () => {
           </button>
         </form>
       </div>
-      <img
+      {/* <img
         src={Logo}
         alt="Gradient Background"
         className="absolute -top-50 -z-1 opacity-50"
-      />
+      /> */}
     </div>
   );
 };
